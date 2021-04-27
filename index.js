@@ -85,6 +85,7 @@ const getEmployeesDb = () => {
   return connection.query(query);
 }
 const viewEmployees = async() => {
+  console.log('trying to run viewEmployees function');
   // run getAllEmployeesDb to get table data
   let employees = await getEmployeesDb();
   // if (err) throw err;

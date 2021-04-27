@@ -1,4 +1,4 @@
-# employee_tracker
+# Employee Tracking App
 
 ```
 As a business owner

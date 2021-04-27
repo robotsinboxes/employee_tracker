@@ -1,21 +1,26 @@
-INSERT INTO department (department_id, dept_name)
-VALUES (900, 'Management'),
-(700, 'Accounting'),
-(600, 'Sales'),
-(400, 'Clerical');
+INSERT INTO department (dept_name)
+VALUES ('Management'),
+('Warehouse Manager'),
+('Accounting'),
+('Sales'),
+('Clerical'),
+('Warehouse');
 
-INSERT INTO employeeRole (title, salary, department_id)
-VALUES ('Regional Manager', '$42,000', 900),
-('Asst To The Regional Manager', '$50,000', 600),
-('Accountant', '$48,000', 700),
-('Secretary', '$42,500', 400),
-('Sales', '$49,000', 600);
+INSERT INTO employeeRole (title, salary)
+VALUES ('Regional Manager', '$42,000'),
+('Warehouse Manager', '$52,000'),
+('Asst To The Regional Manager', '$50,000'),
+('Accountant', '$48,000'),
+('Secretary', '$42,500'),
+('Warehouse Worker', '$45,000'),
+('Sales', '$49,000');
 
 
-INSERT INTO employee (id, first_name, last_name, role_id, manager_id)
-VALUES (164, 'Jan', 'Levinson', 200, null),
-(32, 'Michael', 'Scott', 100, 200),
-(23, 'Dwight', 'Schrute', 50, 100),
-(19, 'Jim', 'Halpert', 60, 100),
-(22, 'Angela', 'Martin', 40, 100),
-(20, 'Pam', 'Beesly', 30, 100);
+INSERT INTO employee (id, first_name, last_name)
+VALUES (10, 'Michael', 'Scott'),
+(19, 'Dwight', 'Schrute'),
+(22, 'Jim', 'Halpert'),
+(25, 'Angela', 'Martin'),
+(26, 'Pam', 'Beesly'),
+(28, 'Darryl', 'Philbin'),
+(31, 'Roy', 'Anderson');
